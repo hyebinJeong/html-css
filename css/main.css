@@ -1,0 +1,121 @@
+.profile {
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.produce {
+  text-align: center;
+}
+
+.box {
+  width: 200px;
+  background-color: cadetblue;
+  /* 상하좌우 여백 */
+  margin: 10px;
+  /* 상하좌우 안쪽 여백 */
+  padding: 40px;
+  /* border 굵기, 종류, 색상 설정 가능 */
+  border: 1px solid black;
+  /* 모서리 둥글게 */
+  border-radius: 15px;
+  /* 가운데 정렬 속성들
+  div는 block 기본으로 있기 때문에 생략 가능 */
+  /* display: block; */
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  box-shadow: 5px 5px 5px 5px gray;
+}
+
+/* .container {
+  width: 800px;
+} */
+
+.header {
+  /* 부모태그 width의 100% */
+  width: 100%;
+  height: 100px;
+  background: aquamarine;
+}
+
+.left-menu {
+  /* 부모 container의 width인 800px의 30%  */
+  width: 20%;
+  height: 400px;
+  background: cornflowerblue;
+  /* 요소를 붕 띄워서 왼쪽 정렬 */
+  /* float: left; */
+  display: inline-block;
+  /* inline-block 안에 글자쓰면 이상해지는 것 방지 */
+  vertical-align: top;
+}
+
+.right {
+  width: 80%;
+  height: 400px;
+  background: coral;
+  /* float: left; */
+  display: inline-block;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: grey;
+  /* 위에서 float 했기 때문에 공중에 떠있으니까 header아래 float 한 애들 아래에 배치가 되어 안보임
+  ==> float다음에 오는 요소는 clear: both 사용해야함 */
+  /* clear: both; */
+
+}
+
+.container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.blog-content{
+  width: 80%;
+  height: 200px;
+  /* background-color: #eee; */
+  float: left;
+}
+
+.blog-img{
+  width: 20%;
+  height: 200px;
+  background-color: yellow;
+  float: left;
+}
+
+.blog-profile{
+  width: 50px;
+  display: flex;
+  float: left;
+}
+
+.blog-name{
+  float: left;
+}
+
+/* navbar 안에있는 모든 li태그는 이 속성을 가져라 */
+.navbar>li{
+  /* 세로 정렬을 가로정렬로 바꿔줌 */
+  display: inline-block;
+  width: 60px;
+  text-align: center;
+  background-color: #eee;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.navbar li a{
+  font-size: 16px;
+  /* a태그 밑줄 & 방문후 보라색 변경되는것 제거 */
+  text-decoration: none;
+}
